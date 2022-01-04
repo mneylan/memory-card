@@ -8,7 +8,7 @@ import { useState, useEffect } from 'react'
 
 function App() {
   const [gameOn, setGameOn] = useState(false)
-  const [gameWon, setGameWon] = useState(false)
+  
   const [fruitOrder, setFruitOrder] = useState(fruitList)
   const [score, setScore] = useState(0)
   const [highScore, setHighScore] = useState(0)
