@@ -1,4 +1,4 @@
-
+@use 'main' 
 .score-outer-container
   padding: 0 20px
   display: flex
@@ -45,6 +45,9 @@
   .score-inner-container-larger
     flex-basis: 90%
     height: 210px
+
+  .score-inner-container
+    flex-basis: 60%
   
   .new-game
     display: block
@@ -54,4 +57,6 @@
   .winner-container
     text-align: center
 
-  
+  .cards-grid-container
+    grid-template-columns: repeat(4, 1fr)
+    grid-template-rows: repeat(3, 1fr)
