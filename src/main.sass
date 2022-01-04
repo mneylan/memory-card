@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Courgette&family=Merriweather&display=swap')
+
+$instructions-font: 'Varela Round', sans-serif
+
 * 
   margin: 0
   padding: 0
@@ -8,3 +12,90 @@
 strong 
   font-weight: bold
 
+.header-container
+  text-align: center
+  background-color: #3a57ff
+  height: 75px
+  display: flex
+  align-items: center
+  justify-content: center
+  
+  .header-title
+    font-size: 35px
+    color: #ffF
+
+.instructions-outer-container
+  height: calc(100vh - 75px)
+  display: flex
+  justify-content: center
+  align-items: center
+
+  .instructions-inner-container
+    border-radius: 10px
+    flex-basis: 33%
+    display: flex
+    flex-direction: column
+    border: solid 4px #3a57ff
+
+    .instructions-title-container
+      text-align: center
+      background-color: #3a57ff
+      padding: 10px 0
+      font-size: 25px
+      letter-spacing: 1px
+      color: white
+
+    .instructions-body-container
+      padding: 12px
+      font-size: 24px
+      line-height: 1.4
+      text-align: center
+      font-family: $instructions-font
+      
+      .instructions-body
+        padding: 5px 0
+  
+.cards-grid-container
+  display: grid
+  padding: 20px
+  grid-template-columns: repeat(6, 1fr)
+  grid-template-rows: repeat(2, 1fr)
+
+  .apple, .banana, .blueberries, .grapes, .kiwi ,.lemon, .lime, .mango, .orange, .raspberries, .strawberries, .watermelon
+    padding: 10px
+    height: 200px
+    border: solid 3px #3a57ff
+    background-position: 50% 50%
+    background-repeat: no-repeat
+    background-size: cover
+  
+  .apple
+    background-image: url('./fruits/apple.jpg')
+  .banana
+    background-image: url('./fruits/banana.jpg')
+  .blueberries
+    background-image: url('./fruits/blueberries.jpg')
+  .grapes
+    background-image: url('./fruits/grapes.jpg')
+  .kiwi    
+    background-image: url('./fruits/kiwi.jpg')
+  .lemon
+    background-image: url('./fruits/lemon.jpg')
+  .lime
+    background-image: url('./fruits/lime.jpg')
+  .mango
+    background-image: url('./fruits/mango.jpg')
+  .orange
+    background-image: url('./fruits/orange.jpg')
+  .raspberries
+    background-image: url('./fruits/raspberries.jpg')
+  .strawberries
+    background-image: url('./fruits/strawberries.jpg')
+  .watermelon  
+    background-image: url('./fruits/watermelon.jpg')
+
+
+@media (max-width: 800px)
+  .cards-grid-container
+    grid-template-columns: repeat(4, 1fr)
+    grid-template-rows: repeat(3, 1fr)
